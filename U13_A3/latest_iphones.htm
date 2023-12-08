@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile World Station</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<style>
+.carousel {
+    position: relative;
+    max-width: 640px;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel .prev, .carousel .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.carousel .prev {
+    left: 0;
+}
+
+.carousel .next {
+    right: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <center>
+	<header>
+        <h1><a href="index.htm">Mobile World Station</a></h1>
+        <nav>
+            <ul>
+                <li><a href="latest_iphones.htm">Explore the Latest iPhones</a></li>
+                <li><a href="iPhone_15_Pro_Max.htm">Discover iPhone 15 Pro Max</a></li>
+                <li><a href="Apple_iPhone_14_Pro_Max_512GB.htm">iPhone 14 Pro Max Details</a></li>
+                <li><a href="iPhone_13_Pro_Max_512GB.htm">iPhone 13 Pro Max Features</a></li>
+                <li><a href="accessories.htm">Premium Accessories</a></li>
+                <li><a href="iphone-15-pro-max-case.htm">Exclusive iPhone 15 Pro Max Cases</a></li>
+                <li><a href="iphone-14-pro-max-case.htm">Waterproof Cases for iPhone 14 Pro Max</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+
+
+<div class="carousel">
+    <img src="img/iPhone_15_Pro_Max_256GB.jpg" alt="iPhone 15 Pro Max 256GB">
+    <img src="img/Apple_iPhone_14_Pro_Max_512GB.jpg" alt="Apple iPhone 14 Pro Max 512GB" style="display:none">
+    <img src="img/iPhone_13_Pro_Max_512GB.jpg" alt="iPhone 13 Pro Max 512GB" style="display:none">
+    
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+
+<table border="1" style="width:100%; border-collapse: collapse;">
+    <tr>
+        <th>Feature</th>
+        <th>iPhone 15 Pro Max</th>
+        <th>iPhone 14 Pro Max</th>
+        <th>iPhone 13 Pro Max</th>
+    </tr>
+    <tr>
+        <td>Display Size</td>
+        <td>6.7 inches</td>
+        <td>6.7 inches</td>
+        <td>6.7 inches</td>
+    </tr>
+    <tr>
+        <td>Processor</td>
+        <td>A17 PRO Bionic</td>
+        <td>A15 Bionic</td>
+        <td>A14 Bionic</td>
+    </tr>
+    <tr>
+        <td>Storage Options</td>
+        <td>256GB/512GB/1TB</td>
+        <td>128GB/256GB/512GB/1TB</td>
+        <td>128GB/256GB/512GB/1TB</td>
+    </tr>
+    <tr>
+        <td>Rear Camera</td>
+        <td>Triple 12MP Ultra Wide, Wide, and Telephoto</td>
+        <td>Triple 12MP Ultra Wide, Wide, and Telephoto</td>
+        <td>Triple 12MP Ultra Wide, Wide, and Telephoto</td>
+    </tr>
+    <tr>
+        <td>Battery Life</td>
+        <td>Up to 29 hours talk time</td>
+        <td>Up to 28 hours talk time</td>
+        <td>Up to 25 hours talk time</td>
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function moveSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.querySelectorAll(".carousel img");
+    if (n >= slides.length) {slideIndex = 0}
+    if (n < 0) {slideIndex = slides.length - 1}
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slides[slideIndex].style.display = "block";  
+}
+
+</script>
+
+
+   
+</body>
+</html>
