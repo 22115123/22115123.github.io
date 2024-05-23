@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit1</title>
+    <style>
+        /* Style your elements here to achieve a brighter Google-inspired look! */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0f2ff; /* Lighter blue base color */
+            background: -webkit-linear-gradient(top, #e0f2ff 0%, #d6e3f0 100%); /* Add subtle gradient */
+            background: linear-gradient(to bottom, #e0f2ff 0%, #d6e3f0 100%); /* Gradient for browsers not supporting -webkit-linear-gradient */
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header.search-header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-header h1 {
+            margin: 0;
+        }
+
+        .search-header p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .search-header form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-header input[type="text"] {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .search-header button {
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .search-header button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        nav.main-nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        nav.main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav.main-nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav.main-nav a {
+            text-decoration: none;
+            color: #000; /* Black text for navigation links */
+            transition: color 0.3s ease; /* Add hover effect */
+        }
+
+        nav.main-nav a:hover {
+            color: #28a745; /* Change color to green on hover */
+        }
+
+        main.content {
+            padding-top: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            background-image: url("images/hero-background.jpg"); /* Replace with your image (consider a lighter image) */
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0; /* Adjust padding to accommodate image */
+        }
+
+        .hero h2 {
+            color: #000; /* Black text for hero section (ensure contrast) */
+        }
+
+        .hero p {
+            color: #000; /* Black text for hero section (ensure contrast) */
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue accent color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius
+            5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add hover effect */
+        }
+
+        .btn:hover {
+            background-color: #0067cc; /* Darken blue on hover */
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #28a745; /* Green accent color for progress bars */
+            border-radius: 5px;
+            transition: width 1s ease;
+        }
+
+        .progress-bar[data-progress] {
+            width: attr(data-progress)%;
+        }
+
+        .contact ul.contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .contact ul.contact-info li {
+            margin-bottom: 5px;
+        }
+
+        .contact ul.contact-info a {
+            color: #28a745; /* Green text for contact info */
+            text-decoration: none;
+        }
+
+        footer.search-footer {
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header class="search-header">
+  <div class="container">
+    <h1>ePortfolio</h1>
+    <p>Dan Yavorskyi</p>
+    <form action="#">
+      <input type="text" placeholder="Search">
+      <button type="submit"><img src="images/magnifying_glass.jpg" alt="Search Icon"></button>
+    </form>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li><a href="index.htm">About</a></li>
+      <li><a href="unit1.htm">Unit1</a></li>
+      <li><a href="unit2.htm">Unit2</a></li>
+      <li><a href="unit8.htm">Unit8</a></li>
+      <li><a href="unit13.htm">Unit13</a></li>
+      <li><a href="unit14.htm">Unit14</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content">
+
+  <section class="hero" id="hero">
+    <div class="container">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Unit1</h2>
+      <p>Our training began with this unit and we began the first steps in writing this coding and the software code itself.
+	 also here we began to study the computer itself, as well as delivering it and programs, how they work, why they look like that, etc.</p>
+      <ul class="skills-list">
+	<img src="images/Unit1_Screenshot1.png">
+	<img src="images/Unit1_Screenshot2.png">
+
+      </ul>
+    </div>
+  </section>
+
+  
+
+  <section class="skills" id="skills
+  >
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skill-bar">
+        <h3>HTML</h3>
+        <div class="progress-bar" data-progress="80"></div>
+      </div>
+      <div class="skill-bar">
+        <h3>CSS</h3>
+        <div class="progress-bar" data-progress="70"></div>
+      </div>
+      </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Get in touch and let's discuss your IT needs!</p>
+      <ul class="contact-info">
+        <li><a href="mailto:22115123@cambria.ac.uk">Email: Dan Yavorskyi</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="search-footer">
+  <div class="container">
+    <p>&copy; Dan Yavorskyi 2024</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
