@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit14</title>
+    <style>
+        /* Style your elements here to achieve a brighter Google-inspired look! */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0f2ff; /* Lighter blue base color */
+            background: -webkit-linear-gradient(top, #e0f2ff 0%, #d6e3f0 100%); /* Add subtle gradient */
+            background: linear-gradient(to bottom, #e0f2ff 0%, #d6e3f0 100%); /* Gradient for browsers not supporting -webkit-linear-gradient */
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header.search-header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-header h1 {
+            margin: 0;
+        }
+
+        .search-header p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .search-header form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-header input[type="text"] {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .search-header button {
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .search-header button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        nav.main-nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        nav.main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav.main-nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav.main-nav a {
+            text-decoration: none;
+            color: #000; /* Black text for navigation links */
+            transition: color 0.3s ease; /* Add hover effect */
+        }
+
+        nav.main-nav a:hover {
+            color: #28a745; /* Change color to green on hover */
+        }
+
+        main.content {
+            padding-top: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            background-image: url("images/hero-background.jpg"); /* Replace with your image (consider a lighter image) */
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0; /* Adjust padding to accommodate image */
+        }
+
+        .hero h2 {
+            color: #000; /* Black text for hero section (ensure contrast) */
+        }
+
+        .hero p {
+            color: #000; /* Black text for hero section (ensure contrast) */
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue accent color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius
+            5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add hover effect */
+        }
+
+        .btn:hover {
+            background-color: #0067cc; /* Darken blue on hover */
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #28a745; /* Green accent color for progress bars */
+            border-radius: 5px;
+            transition: width 1s ease;
+        }
+
+        .progress-bar[data-progress] {
+            width: attr(data-progress)%;
+        }
+
+        .contact ul.contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .contact ul.contact-info li {
+            margin-bottom: 5px;
+        }
+
+        .contact ul.contact-info a {
+            color: #28a745; /* Green text for contact info */
+            text-decoration: none;
+        }
+
+        footer.search-footer {
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header class="search-header">
+  <div class="container">
+    <h1>ePortfolio</h1>
+    <p>Dan Yavorskyi</p>
+    <form action="#">
+      <input type="text" placeholder="Search">
+      <button type="submit"><img src="images/magnifying_glass.jpg" alt="Search Icon"></button>
+    </form>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li><a href="index.htm">About</a></li>
+      <li><a href="unit1.htm">Unit1</a></li>
+      <li><a href="unit2.htm">Unit2</a></li>
+      <li><a href="unit8.htm">Unit8</a></li>
+      <li><a href="unit13.htm">Unit13</a></li>
+      <li><a href="unit14.htm">Unit14</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content">
+
+  <section class="hero" id="hero">
+    <div class="container">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Unit14</h2>
+<br>Introduction to Computer Hardware
+<br>
+<br>Overview of computer systems and hardware components
+<br>Understanding the roles of different hardware parts
+<br>Basic computer architecture
+<br>Safety and Precautions
+<br>
+<br>Importance of safety in handling hardware
+<br>ESD (Electrostatic Discharge) precautions
+<br>Safe use of tools and equipment
+<br>Internal Components
+<br>
+<br>Motherboards: form factors, components, and features
+<br>Central Processing Units (CPUs): types, installation, and cooling solutions
+<br>Memory (RAM): types, installation, and configuration
+<br>Storage devices: HDDs, SSDs, installation, and RAID configurations
+<br>Power supplies: types, installation, and power requirements
+<br>Peripheral Devices
+<br>
+<br>Input devices: keyboards, mice, scanners
+<br>Output devices: monitors, printers, speakers
+<br>External storage and backup solutions
+<br>System Assembly
+<br>
+<br>Steps to assemble a computer system
+<br>Installing and connecting internal components
+<br>Setting up and connecting peripheral devices
+<br>Cable management and organization
+<br>BIOS/UEFI Configuration
+<br>
+<br>Accessing and navigating BIOS/UEFI
+<br>Configuring hardware settings
+<br>Updating BIOS/UEFI firmware
+<br>Installing Operating Systems
+<br>
+<br>Preparing for OS installation (partitioning, formatting)
+<br>Installing various operating systems (Windows, Linux)
+<br>Driver installation and configuration
+<br>Maintenance and Troubleshooting
+<br>
+<br>Routine maintenance tasks (cleaning, updates)
+<br>Common hardware issues and troubleshooting techniques
+<br>Diagnostic tools and software
+<br>Replacing and upgrading components
+<br>Network Hardware
+<br>
+<br>Network interface cards (NICs)
+<br>Setting up wired and wireless connections
+<br>Basic network troubleshooting
+<br>Practical Skills
+<br>Assembling and disassembling computer systems
+<br>Installing and configuring CPUs, memory, storage, and peripheral devices
+<br>Navigating and configuring BIOS/UEFI settings
+<br>Installing operating systems and necessary drivers
+<br>Performing routine maintenance and troubleshooting hardware issues
+<br>Implementing basic network connections
+<br>Assessment
+<br>Practical Projects
+<br> Hands-on tasks such as assembling a computer, installing hardware, and configuring systems.
+<br>Written Exams
+<br> Testing theoretical understanding of hardware components, installation procedures, and troubleshooting methods.
+<br>Class Assignments
+<br> Regular tasks to reinforce practical and theoretical knowledge.
+<br>Presentations
+<br> Demonstrating and explaining the process of hardware installation and maintenance.
+<br>Learning Outcomes
+<br>By the end of the unit, students should be able to
+<br>
+<br>Identify and describe the function of various computer hardware components.
+<br>Safely handle and install internal and peripheral hardware devices.
+<br>Configure BIOS/UEFI settings and install operating systems.
+<br>Perform routine maintenance tasks to ensure system reliability.
+<br>Troubleshoot and resolve common hardware issues.
+<br>Set up basic network connections and troubleshoot connectivity problems.
+<br>Career Pathways
+<br>Completion of this unit can lead to entry-level positions such as IT support technician, hardware technician, or computer repair specialist. It also serves as a foundation for further studies in computer hardware, networking, or IT support.  <ul class="skills-list">
+	
+	<img src="images/Unit14_Screenshot1.png">
+	<img src="images/Unit14_Screenshot2.png">
+
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Get in touch and let's discuss your IT needs!</p>
+      <ul class="contact-info">
+        <li><a href="mailto:22115123@cambria.ac.uk">Email: Dan Yavorskyi</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="search-footer">
+  <div class="container">
+    <p>&copy; Dan Yavorskyi 2024</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
